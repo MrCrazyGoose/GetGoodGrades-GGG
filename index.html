@@ -4,18 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
     <title>GGG - Grade Calculator</title>
 </head>
 <body>
     <h1>Get Good Grades (GGG)*</h1>
 
-    <section>
-        <div>Unweighted GPA: <span id="UW"></span></div>
-        <div>Weighted GPA: <span></span>div></div>
+    <section class="results">
+        <div>Unweighted GPA: <span id="UW" class="blur">3.1416</span></div>
+        <div>Weighted GPA: <span id="W" class="blur">4.2069</span></div>
     </section>
 
     <section>
         <table class="outputTable">
+            <colgroup>
+                <col span="1" class="leftCol">
+            </colgroup>
             <tr><th colspan="2">Number of Regular Grades</th></tr>
             <tr>
                 <td>A</td>
@@ -40,26 +45,29 @@
         </table>
 
         <table class="outputTable">
+            <colgroup>
+                <col span="1" class="leftCol">
+            </colgroup>
             <tr><th colspan="2">Number of Honors/AP/Adv./IB Grades</th></tr>
             <tr>
                 <td>A</td>
-                <td id="As"></td>
+                <td id="Ash"></td>
             </tr>
             <tr>
                 <td>B</td>
-                <td id="Bs"></td>
+                <td id="Bsh"></td>
             </tr>
             <tr>
                 <td>C</td>
-                <td id="Cs"></td>
+                <td id="Csh"></td>
             </tr>
             <tr>
                 <td>D</td>
-                <td id="Ds"></td>
+                <td id="Dsh"></td>
             </tr>
             <tr>
                 <td>E</td>
-                <td id="Es"></td>
+                <td id="Esh"></td>
             </tr>
         </table>
     </section>
@@ -75,15 +83,15 @@
                 <td><button id="addD">D</button></td>
                 <td><button id="addE">E</button></td>
             </tr>
-            
+        
             <tr><th colspan="5">Honors/AP/Adv./IB Grades</th></tr>
 
             <tr>
-                <td><button id="addA">A</button></td>
-                <td><button id="addB">B</button></td>
-                <td><button id="addC">C</button></td>
-                <td><button id="addD">D</button></td>
-                <td><button id="addE">E</button></td>
+                <td><button id="addAh">A</button></td>
+                <td><button id="addBh">B</button></td>
+                <td><button id="addCh">C</button></td>
+                <td><button id="addDh">D</button></td>
+                <td><button id="addEh">E</button></td>
             </tr>
         </table>
     </section>
